@@ -17,15 +17,14 @@ public class Pombao2 {
         }
         int maiorArgola = argola[0];
         int menorArgola = argola[0];
-        for(int i = 1; i < n; i++){
+        for (int i = 1; i < n; i++) {
             if (maiorArgola < argola[i]) {
                 maiorArgola = argola[i];
-            }
-            if (menorArgola > argola[i]) {
+            } else if (menorArgola > argola[i]) {
                 menorArgola = argola[i];
             }
         }
-        System.out.println("Ver numero: " + maiorArgola);
+        System.out.println("Maior argola: " + maiorArgola);
         System.out.println("Menor argola " + menorArgola);
     }
 
