@@ -26,6 +26,18 @@ public class Pombao2 {
         }
         System.out.println("Maior argola: " + maiorArgola);
         System.out.println("Menor argola " + menorArgola);
+
+        System.out.println("\n \n");                                                                                
+System.out.println("    xXXXXXXXXXXXXXXXXXXx");                              
+System.out.println(" XXXX                  XXXX");                         
+System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX");                       
+System.out.println("X  X     XXXX    XXXX    X  X");                      
+System.out.println("XXXXX     X       X      XXXXX");                     
+System.out.println(" X  X        XXX         X  X");                      
+System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX");                       
+System.out.println("  XXXXX   X  X  X  X  XXXXX");                         
+System.out.println("       XXXXXXXXXXXXXXX");                              
+       
     }
 
     public static void main(String[] args) {
