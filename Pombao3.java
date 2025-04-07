@@ -18,8 +18,7 @@ public class Pombao3 {
 
         int maiorArgola = argola[0];
         int menorArgola = argola[0];
-        int argolinhaSafadinha = menorArgola;
-        int argolinhaSafadinhaDois = maiorArgola;
+
         for (int i = 1; i < n; i++) {
             if (maiorArgola < argola[i]) {
                 maiorArgola = argola[i];
@@ -27,14 +26,20 @@ public class Pombao3 {
                 menorArgola = argola[i];
             }
         }
+        int argolinhaSafadinha = menorArgola;
+        int argolinhaSafadinhaDois = maiorArgola;
         for (int i = 0; i < n; i++) {
-            if (argola[i] > menorArgola && argola[i] < argolinhaSafadinha) {
-                argolinhaSafadinha = argola[i];
+            if (argola[i] > menorArgola && argola[i] < maiorArgola) {
+                if (argola[i] > argolinhaSafadinha) {
+                    argolinhaSafadinha = argola[i];
+                }
             }
         }
         for (int i = 0; i < n; i++) {
-            if (argola[i] < maiorArgola && argola[i] > argolinhaSafadinhaDois){
-                argolinhaSafadinhaDois = argola[i];
+            if (argola[i] > menorArgola && argola[i] < maiorArgola) {
+                if (argola[i] < argolinhaSafadinhaDois) {
+                    argolinhaSafadinhaDois = argola[i];
+                }
             }
         }
         System.out.println("Maior argola: " + maiorArgola);
