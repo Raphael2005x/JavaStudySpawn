@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class MultiplicarArray {
 
     public static int Multiplicar(int array[]) {
-        int total = 1;
+        int total = array[0];
         int n = array.length;
-        for(int i = 0; i < n; i++){
-         total *= array[i];
+        for (int i = 1; i < n; i++) {
+            total *= array[i];
         }
-    return total;
+        return total;
     }
 
     public static void run() {
@@ -25,5 +25,15 @@ public class MultiplicarArray {
 
     public static void main(String[] args) {
         MultiplicarArray.run();
+    }
+
+    public void LerEntradas(int n) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'LerEntradas'");
+    }
+
+    public void PegarMultiplo() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'PegarMultiplo'");
     }
 }

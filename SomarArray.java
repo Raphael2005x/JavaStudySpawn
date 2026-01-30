@@ -24,6 +24,6 @@ public class SomarArray {
     }
 
     public static void main(String[] args) {
-        SomarArray.run();
+        main.run();
     }
 }
